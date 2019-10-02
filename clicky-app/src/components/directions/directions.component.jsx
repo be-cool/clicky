@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ScoreBoard from './../score-board/score-board.component'
+import ScoreBoard from '../score-board/score-board.component'
 
 import './intro.styles.scss';
 
