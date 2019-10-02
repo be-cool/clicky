@@ -8,7 +8,7 @@ import { shuffleArray } from '../randomizer/randomizer';
 
 class HomePage extends Component {
     state = {
-    images: [],
+    images: images,
     clickedImageIds: [],
     score: 0,
     topScore: 0
@@ -41,6 +41,7 @@ class HomePage extends Component {
 
   render() {
     const { images, score, topScore } = this.state;
+    console.log("this is images", images)
     return (
       <div className="home-page">
         <Navbar />
