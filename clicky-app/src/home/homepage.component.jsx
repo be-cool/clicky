@@ -3,7 +3,7 @@ import Navbar from '../components/navbar/navbar.component';
 import Main from '../components/main/main.component';
 import GameImages from '../components/game-images/game-images.component';
 import images from './../data/imageData';
-import { shuffleArray } from '../randomizer/randomizer';
+import shuffleArray from '../randomizer/randomizer';
 
 
 class HomePage extends Component {
@@ -11,7 +11,7 @@ class HomePage extends Component {
     images: images,
     clickedImageIds: [],
     score: 0,
-    topScore: 0
+    highScore: 0
   };
 
   shuffleArray = (array) => {
@@ -31,21 +31,21 @@ class HomePage extends Component {
     let index = event.target.dataset.id;
     if(!this.state.clickedImageIds.includes(index)) {
       this.setState({
-        clickedImageIds: [...this.state.clickedImageIds, index],
+        clickedImageIds: [this.state.clickedImageIds, index],
         score: this.state.score + 1
       }, () => {
-        if(this.state.topScore < this.state.score) this.setState({ topScore: this.state.score})
+        if(this.state.highScore < this.state.score) this.setState({ highScore: this.state.score})
       })
     } else this.setState({ score: 0 , clickedImageIds: []});
   };
 
   render() {
-    const { images, score, topScore } = this.state;
+    const { images, score, highScore } = this.state;
     console.log("this is images", images)
     return (
       <div className="home-page">
         <Navbar />
-        <Main score={score} topScore={topScore} />
+        <Main score={score} highScore={highScore} />
         <GameImages images={images} handleImageCLick={this.handleImageClick} />
       </div>
       )
