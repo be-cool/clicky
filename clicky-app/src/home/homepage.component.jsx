@@ -8,7 +8,7 @@ import images from '../data/imageData';
 
 class HomePage extends Component {
     state = {
-    images: images,
+    images: [],
     clickedImageIds: [],
     score: 0,
     highScore: 0
