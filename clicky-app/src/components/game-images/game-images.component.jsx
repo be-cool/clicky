@@ -5,11 +5,10 @@ import './game-images.styles.css';
 const GameImages = (props) => (
   <div className="gameImagesContainer">
     <div className="wholeGameWrapper">
-      { props.images ? props.images.map((image) => {
-            const { id } = image;
+      { props.images ? props.images.map((image, i) => {
             return (
-            <div className="individualWrapper" key={id}> 
-              <div className="game-image" data-id={id} onClick={props.handleImageCLick} >
+            <div className="individualWrapper" key={i}> 
+              <div className="game-image" data-id={image} style={{backgroundImage: `url(${image})`}} onClick={props.handleImageCLick} >
               </div>
             </div>
             );

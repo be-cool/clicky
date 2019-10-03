@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import Navbar from '../components/navbar/navbar.component';
 import Main from '../components/main/main.component';
 import GameImages from '../components/game-images/game-images.component';
-import images from './../data/imageData';
-import shuffleArray from '../randomizer/randomizer';
+import images from '../data/imageData';
+// import shuffleArray from '../randomizer/randomizer';
 
 
 class HomePage extends Component {
@@ -15,20 +15,21 @@ class HomePage extends Component {
   };
 
   shuffleArray = (array) => {
-      for (let i = array.length - 1; i > 0; i--) {
-          const j = Math.floor(Math.random() * (i + 1));
-          [array[i], array[j]] = [array[j], array[i]];
-      }
-    };
-  
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  };
 
   componentDidMount() {
     this.setState({ images: this.shuffleArray(images)});
   }
 
   handleImageClick = (event) => {
-    this.setState({ images: shuffleArray(this.state.images)});
+    this.setState({ images: this.shuffleArray(this.state.images)});
     let index = event.target.dataset.id;
+    console.log(index)
     if(!this.state.clickedImageIds.includes(index)) {
       this.setState({
         clickedImageIds: [this.state.clickedImageIds, index],
@@ -41,7 +42,6 @@ class HomePage extends Component {
 
   render() {
     const { images, score, highScore } = this.state;
-    console.log("this is images", images)
     return (
       <div className="home-page">
         <Navbar />
