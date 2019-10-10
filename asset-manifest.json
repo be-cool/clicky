@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/clicky-app/static/css/main.d3eaadd5.chunk.css",
-    "main.js": "/clicky-app/static/js/main.618d9573.chunk.js",
-    "main.js.map": "/clicky-app/static/js/main.618d9573.chunk.js.map",
-    "runtime-main.js": "/clicky-app/static/js/runtime-main.e5359dde.js",
-    "runtime-main.js.map": "/clicky-app/static/js/runtime-main.e5359dde.js.map",
-    "static/js/2.85193a1d.chunk.js": "/clicky-app/static/js/2.85193a1d.chunk.js",
-    "static/js/2.85193a1d.chunk.js.map": "/clicky-app/static/js/2.85193a1d.chunk.js.map",
-    "index.html": "/clicky-app/index.html",
-    "precache-manifest.90ac69f390817bc6fd2ec2067100f033.js": "/clicky-app/precache-manifest.90ac69f390817bc6fd2ec2067100f033.js",
-    "service-worker.js": "/clicky-app/service-worker.js",
-    "static/css/main.d3eaadd5.chunk.css.map": "/clicky-app/static/css/main.d3eaadd5.chunk.css.map"
+    "main.css": "/clicky.github.io/static/css/main.d3eaadd5.chunk.css",
+    "main.js": "/clicky.github.io/static/js/main.21879d98.chunk.js",
+    "main.js.map": "/clicky.github.io/static/js/main.21879d98.chunk.js.map",
+    "runtime-main.js": "/clicky.github.io/static/js/runtime-main.2dc73a41.js",
+    "runtime-main.js.map": "/clicky.github.io/static/js/runtime-main.2dc73a41.js.map",
+    "static/js/2.85193a1d.chunk.js": "/clicky.github.io/static/js/2.85193a1d.chunk.js",
+    "static/js/2.85193a1d.chunk.js.map": "/clicky.github.io/static/js/2.85193a1d.chunk.js.map",
+    "index.html": "/clicky.github.io/index.html",
+    "precache-manifest.8ab631c551e836c55326ed279d3e10ff.js": "/clicky.github.io/precache-manifest.8ab631c551e836c55326ed279d3e10ff.js",
+    "service-worker.js": "/clicky.github.io/service-worker.js",
+    "static/css/main.d3eaadd5.chunk.css.map": "/clicky.github.io/static/css/main.d3eaadd5.chunk.css.map"
   }
 }
