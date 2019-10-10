@@ -2,7 +2,7 @@
   "name": "clicky",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://be-cool.github.io/react-gh-pages",
+  "homepage": "http://be-cool.github.io/clicky-app",
   "dependencies": {
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
